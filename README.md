@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aura Finance — MVP
 
 Professores: Dieinison Braga e Marisa Silva
@@ -57,3 +58,6 @@ Se quiser, eu posso:
 
 ---
 Template inicial: adaptado a partir do template oficial `create-vite` para React.
+=======
+# MVP_Front-end
+>>>>>>> 1933a26ca1077397f26457542b14f96c33f9ef1e
