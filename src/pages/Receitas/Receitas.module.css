@@ -1,0 +1,85 @@
+.page {
+  display: grid;
+  gap: 1rem;
+}
+
+.toolbar,
+.card {
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.controls > * {
+  min-width: 0;
+}
+
+.controls .search,
+.controls [data-select],
+.controls input[type="month"],
+.select {
+  flex: 0 0 245px;
+  width: 245px;
+  height: 48px;
+  border-radius: 16px;
+}
+
+.controls button {
+  flex: 0 0 auto;
+  height: 48px;
+}
+
+.form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.fieldLabel {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.iconButton {
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.select {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 0 0.9rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  backdrop-filter: blur(14px);
+}

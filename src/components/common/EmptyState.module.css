@@ -1,0 +1,16 @@
+.empty {
+  border: 1px dashed var(--border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.empty h3 {
+  margin: 0 0 0.35rem;
+  color: var(--text);
+}
+
+.empty p {
+  margin: 0 0 1rem;
+}

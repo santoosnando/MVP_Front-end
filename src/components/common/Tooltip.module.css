@@ -1,0 +1,24 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(6, 12, 20, 0.9);
+  color: white;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.wrapper:hover .tooltip {
+  opacity: 1;
+}

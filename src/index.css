@@ -1,0 +1,38 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(117, 216, 255, 0.22), transparent 28%),
+    radial-gradient(circle at 78% 20%, rgba(138, 124, 255, 0.16), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(47, 212, 143, 0.08), transparent 24%);
+  filter: blur(96px);
+  opacity: 0.72;
+  z-index: -1;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+select {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+select option {
+  color: var(--text);
+  background: #101622;
+}

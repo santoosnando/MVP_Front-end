@@ -1,0 +1,16 @@
+.card {
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.card h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-muted);
+}

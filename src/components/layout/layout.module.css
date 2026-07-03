@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 22%),
+    radial-gradient(circle at top left, rgba(117, 216, 255, 0.08), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(138, 124, 255, 0.1), transparent 28%);
+}
+
+.content {
+  flex: 1;
+  padding: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}

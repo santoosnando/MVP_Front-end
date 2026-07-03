@@ -1,0 +1,25 @@
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.9rem 0.7rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table th {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.empty {
+  color: var(--text-muted);
+  padding: 1rem 0;
+}

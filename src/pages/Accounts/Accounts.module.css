@@ -1,0 +1,133 @@
+.page {
+  display: grid;
+  gap: 1rem;
+}
+
+.toolbar,
+.card {
+  padding: 1rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.controls > * {
+  min-width: 0;
+}
+
+.controls .search,
+.controls [data-select],
+.controls input[type="month"] {
+  flex: 0 0 245px;
+  width: 245px;
+}
+
+.controls button {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 900px) {
+  .controls {
+    flex-wrap: wrap;
+  }
+
+  .controls .search,
+  .controls [data-select],
+  .controls input[type="month"] {
+    flex: 1 1 100%;
+  }
+}
+
+.select {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select option {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.iconButton {
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.fieldLabel {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.statementList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.statementCard {
+  padding: 0.8rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.statementCard p {
+  margin: 0.25rem 0;
+  font-weight: 700;
+}
+
+.statementCard small {
+  color: var(--text-muted);
+}
+
+.status {
+  text-transform: capitalize;
+}
+
+@media (max-width: 700px) {
+  .controls {
+    flex-direction: column;
+  }
+}

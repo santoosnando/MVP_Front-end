@@ -1,0 +1,35 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 0 1rem;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+}
+
+.field {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--text);
+}
+
+.field:focus {
+  box-shadow: none;
+  border: 0;
+}
+
+.field:-webkit-autofill,
+.field:-webkit-autofill:hover,
+.field:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text);
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
