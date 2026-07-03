@@ -1,63 +1,99 @@
-<<<<<<< HEAD
-# Aura Finance — MVP
+# Aura Finance - MVP
 
-Professores: Dieinison Braga e Marisa Silva
+Projeto desenvolvido para demonstrar os conceitos de componentizacao com React, uso de hooks e navegacao entre paginas com React Router.
 
-Projeto demonstrativo de um painel financeiro construído com React + Vite.
+## Para o professor
 
-Funcionalidades principais implementadas (MVP):
+Este sistema foi construido como um MVP de front-end e contem os pontos pedidos na proposta da disciplina:
 
-- Páginas: Dashboard, Contas, Despesas, Receitas, Configurações e NotFound (>=3 páginas).
-- Componentização: componentes reutilizáveis como `GlassCard`, `StatCard`, `Table`, `Modal`, `Input`, `Button`, etc.
-- Navegação: roteamento com `react-router-dom`, uso de hooks `useNavigate`, `useParams` e `useLocation`.
-- Formulários com labels, selects padronizados e validações simples.
-- Despesas: recorrência mensal, parcelas editáveis, aviso de vencimento (1-7 dias) e coluna "Pago (mês vigente)" com checkbox.
-- Extratos: visualização simplificada por conta e por despesa (modal) e página de detalhe por conta (`/accounts/:id`).
-- Dashboard: cards interativos (clicáveis), codificação de cores para entradas/saídas e gráfico de comparação mês atual x mês anterior.
+- Aplicacao com mais de 3 paginas.
+- Uso de componentes reutilizaveis.
+- Uso de React com estado, props e hooks.
+- Navegacao entre rotas com React Router.
+- Layout responsivo para desktop e telas menores.
+- Estrutura pensada para demonstrar organizacao de codigo e reuso.
 
-Arquitetura e pontos importantes:
+## Observações
 
-- Componentização: os componentes ficam em `src/components/` e são usados em várias páginas.
-- Dados de exemplo: `src/data/` contém `accounts`, `expenses` e `income` para popular a UI sem backend.
-- Serviços: utilitários como `createId` e lógica de lembretes estão em `src/services/financeService.js`.
+- O projeto esta focado em front-end, sem backend real.
+- Os dados utilizados sao simulados em memoria para permitir a navegacao e interacao da interface.
+- As acoes de cadastro, edicao, remocao e filtro foram simuladas para representar a experiencia de uso.
 
-Como rodar localmente
+## Paginas disponiveis
 
-1. Instale dependências:
+- Dashboard
+- Contas
+- Despesas
+- Receitas
+- Configuracoes
+- Detalhe de conta
+- Pagina 404 para rotas inexistentes
+
+## Componentes reutilizaveis
+
+Os principais componentes reaproveitados em varias telas estao em `src/components/`:
+
+- `Button`
+- `GlassCard`
+- `Input`
+- `Modal`
+- `Select`
+- `SearchBar`
+- `PageTitle`
+- `StatCard`
+- `Table`
+- `EmptyState`
+- `Loader`
+- `Toast`
+
+## Hooks e recursos usados
+
+- `useState`
+- `useEffect`
+- `useMemo`
+- `useRef`
+- `useNavigate`
+- `useParams`
+- `useLocation`
+
+## Como executar o projeto
+
+### 1. Instalar dependencias
 
 ```bash
 npm install
 ```
 
-2. Rodar em modo de desenvolvimento:
+### 2. Rodar em desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-3. Build de produção:
+### 3. Gerar build de producao
 
 ```bash
 npm run build
 ```
 
-Observações para entrega
+## Como usar o sistema
 
-- Para hospedar publicamente (requisito da disciplina), faça push deste repositório para o GitHub e inclua o link no seu README (não incluído automaticamente aqui).
-- O README deve conter instruções de instalação (já presentes) e uma breve descrição das páginas, componentes e hooks utilizados.
+- Acesse o Dashboard para visualizar o resumo financeiro.
+- Use a sidebar para navegar entre Contas, Despesas, Receitas e Configuracoes.
+- Em Contas, voce pode criar, editar, remover e abrir o extrato de cada conta.
+- Em Despesas, voce pode filtrar, cadastrar, editar, marcar como paga e acompanhar avisos de vencimento.
+- Em Receitas, voce pode cadastrar, editar e remover entradas.
+- Em Configuracoes, voce pode alternar a opcao de notificacoes.
+- A pagina 404 aparece quando a rota informada nao existe.
 
-Lista de componentes implementados (exemplos):
+## Estrutura principal
 
-- `GlassCard`, `StatCard`, `Table`, `Modal`, `Input`, `Button`, `PageTitle`, `SearchBar`, `Table`, `Toast`.
+- `src/components/` - componentes reutilizaveis
+- `src/pages/` - telas da aplicacao
+- `src/hooks/` - hooks de dados e filtragem
+- `src/data/` - dados simulados
+- `src/services/` - regras auxiliares da aplicacao
+- `src/rotas/` - configuracao das rotas
 
-Se quiser, eu posso:
 
-- Gerar um `README` mais detalhado com imagens e roteiro de validação;
-- Preparar instruções para deploy no GitHub Pages ou Vercel;
-- Comitar e formatar as alterações finais.
-
----
-Template inicial: adaptado a partir do template oficial `create-vite` para React.
-=======
-# MVP_Front-end
->>>>>>> 1933a26ca1077397f26457542b14f96c33f9ef1e
+Este projeto foi montado para evidenciar componentizacao, reuso e navegacao em React.
